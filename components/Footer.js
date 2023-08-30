@@ -1,0 +1,67 @@
+import Image from 'next/image';
+import React from 'react';
+import Logo from '../public/Logos/logo.png';
+import Link from 'next/link';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+
+export default function Footer() {
+    return (
+        <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 lg:px-8 py-12'>
+            <div className='w-full lg:flex grid grid-cols-1 lg:gap-24 md:gap-8 gap-10'>
+                <div className='lg:w-[45%] w-full'>
+                    <div className='flex flex-col gap-8'>
+                        <Link href='/'><Image src={Logo} width={100} height={100} alt='Logo' className='lg:mb-8 md:mb-5 mb-5' /></Link>
+                        <p className='text-[#B5B2E5] text-base lg:w-full md:w-4/5 w-full'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v</p>
+                        <div className='lg:mb-0 md:mb-8 mb-5'>
+                            <h3 className='text-[#FDBE44] font-semibold text-base uppercase mb-6'>STAY CONNECTED</h3>
+                            <div className='flex items-center gap-3'>
+                                <Link href='#' target='_blank' className='group border border-blue-900 border-opacity-70 hover:border-[#1bf1b13f] transition-all inline-block p-3 rounded-lg'>
+                                    <FaFacebookF className='text-[#989CBE] group-hover:text-[#1BF1B1] transition-all text-lg' />
+                                </Link>
+                                <Link href='#' target='_blank' className='group border border-blue-900 border-opacity-70 hover:border-[#1bf1b13f] transition-all inline-block p-3 rounded-lg'>
+                                    <FaTwitter className='text-[#989CBE] group-hover:text-[#1BF1B1] transition-all text-lg' />
+                                </Link>
+                                <Link href='#' target='_blank' className='group border border-blue-900 border-opacity-70 hover:border-[#1bf1b13f] transition-all inline-block p-3 rounded-lg'>
+                                    <FaInstagram className='text-[#989CBE] group-hover:text-[#1BF1B1] transition-all text-lg' />
+                                </Link>
+                                <Link href='#' target='_blank' className='group border border-blue-900 border-opacity-70 hover:border-[#1bf1b13f] transition-all inline-block p-3 rounded-lg'>
+                                    <FaLinkedinIn className='text-[#989CBE] group-hover:text-[#1BF1B1] transition-all text-lg' />
+                                </Link>
+                                <Link href='#' target='_blank' className='group border border-blue-900 border-opacity-70 hover:border-[#1bf1b13f] transition-all inline-block p-3 rounded-lg'>
+                                    <FaYoutube className='text-[#989CBE] group-hover:text-[#1BF1B1] transition-all text-lg' />
+                                </Link>
+                            </div>
+                        </div>
+                        <p className='text-white text-sm lg:mt-12 md:mt-5 mt-12 lg:block hidden'>&copy; 2023 Tender Tigers. All Right Reserved </p>
+                    </div>
+                </div>
+                <div className='lg:w-[55%] w-full'>
+                    <div className='grid md:grid-cols-3 grid-cols-2 md:gap-8 gap-10'>
+                        <ul className='flex flex-col md:gap-6 gap-3'>
+                            <h3 className='text-white font-semibold text-xl md:mb-8 mb-4'>Marketplace</h3>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Explore</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Articles</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>How It Works</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Help</Link></li>
+                        </ul>
+                        <ul className='flex flex-col md:gap-6 gap-3'>
+                            <h3 className='text-white font-semibold text-xl md:mb-8 mb-4'>Links</h3>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Explore</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Articles</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>How It Works</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Help</Link></li>
+                        </ul>
+                        <ul className='flex flex-col md:gap-6 gap-3'>
+                            <h3 className='text-white font-semibold text-xl md:mb-8 mb-4'>Others</h3>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Explore</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Articles</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>How It Works</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Help</Link></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p className='text-white text-sm mt-12 lg:hidden block text-center'>&copy; 2023 Tender Tigers. All Right Reserved </p>
+        </div>
+    )
+}
