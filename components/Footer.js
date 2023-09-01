@@ -46,22 +46,22 @@ export default function Footer() {
                         </ul>
                         <ul className='flex flex-col md:gap-6 gap-3'>
                             <h3 className='text-white font-semibold text-xl md:mb-8 mb-4'>Links</h3>
-                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Explore</Link></li>
-                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Articles</Link></li>
-                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>How It Works</Link></li>
-                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Help</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Tokens</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>API</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Big Bounty</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Become Partners</Link></li>
                         </ul>
                         <ul className='flex flex-col md:gap-6 gap-3'>
                             <h3 className='text-white font-semibold text-xl md:mb-8 mb-4'>Others</h3>
-                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Explore</Link></li>
-                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Articles</Link></li>
-                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>How It Works</Link></li>
-                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Help</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Tokens</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>API</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Big Bounty</Link></li>
+                            <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Become Partners</Link></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <p className='text-white text-sm mt-12 lg:hidden block text-center'>&copy; 2023 Tender Tigers. All Right Reserved </p>
+            <p className='text-white text-sm mt-16 lg:hidden block text-center'>&copy; 2023 Tender Tigers. All Right Reserved </p>
         </div>
     )
 }

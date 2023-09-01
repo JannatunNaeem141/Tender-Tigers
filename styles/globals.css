@@ -19,8 +19,13 @@
     border: 1.5px solid rgba(87, 33, 203, 0.30);
     background: linear-gradient(137deg, rgba(155, 121, 255, 0.15) 0%, rgba(21, 14, 59, 0.15) 100%);
     backdrop-filter: blur(12.5px);
-}
+} */
 
 .card1-bg-image {
-    background-image: url(../../public/Features/monkey-1.png);
-} */
+    background-image: url(../public/Monkey.png);
+}
+
+.card-inner-bg-css {
+    background: rgba(37, 20, 68, 0.67);
+    backdrop-filter: blur(2px);
+}

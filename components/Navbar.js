@@ -4,42 +4,84 @@ import { HiMenu } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import Logo from '../public/Logos/logo.png';
 import Image from 'next/image';
+import { FaDiscord, FaTwitter } from 'react-icons/fa';
+
 
 export default function Navbar() {
-    const Links = [
-        { name: "HOME", link: "/" },
-        { name: "SERVICE", link: "/" },
-        { name: "ABOUT", link: "/" },
-        { name: "BLOG'S", link: "/" },
-        { name: "CONTACT", link: "/" },
-    ];
     const [open, setOpen] = useState(false);
     return (
-        <div className='max-w-7xl mx-auto'>
-            {/* <div className='shadow-md w-full fixed top-0 left-0'> */}
-            <div className={`md:flex items-center justify-between ${open ? 'bg-white' : 'bg-transparent'} py-4 md:px-10 px-7`}>
-                <Link href='/' className='font-bold text-2xl'><Image src={Logo} width={100} height={100} alt='Logo' /></Link>
+        <nav className={`absolute z-10 top-0 w-full py-1.5 ${open ? 'bg-[#0E102B]' : 'bg-transparent'}`}>
+            <div className="justify-between px-4 lg:mx-auto md:mx-5 mx-0 lg:max-w-7xl lg:items-center lg:flex lg:px-8">
+                <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
+                    <Link href='/'><Image src={Logo} width={100} height={100} alt='Logo' /></Link>
+                    <div className="lg:hidden flex items-center gap-3">
+                        {/* Hamburger toggle button */}
+                        <button
+                            className="p-2 text-gray-700 rounded-md outline-none"
+                            onClick={() => setOpen(!open)}
+                        >
+                            {open ? (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6 dark:text-white"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clipRule="evenodd"
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-6 h-6 dark:text-white"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth={2}
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M4 6h16M4 12h16M4 18h16"
+                                    />
+                                </svg>
+                            )}
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div className={`lg:flex lg:items-center lg:justify-between lg:pb-0 pb-12 absolute lg:static lg:bg-transparent bg-[#0E102B] lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
+                        <nav className="lg:flex grid grid-cols-1 items-center justify-center lg:gap-5 gap-5 lg:pt-0 pt-8">
+                            <Link href='/' className='text-white hover:text-[#1BF1B1] duration-500 font-medium'>Home</Link>
+                            <Link href='#' className='text-white hover:text-[#1BF1B1] duration-500 font-medium'>Marketplace</Link>
+                            <Link href='#' className='text-white hover:text-[#1BF1B1] duration-500 font-medium'>Collection</Link>
+                            <Link href='#' className='text-white hover:text-[#1BF1B1] duration-500 font-medium'>Community</Link>
+                            <Link href='#' className='text-white hover:text-[#1BF1B1] duration-500 font-medium'>Create</Link>
+                        </nav>
 
-                <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-                    {open ?
-                        <AiOutlineClose className='' />
-                        :
-                        <HiMenu className='text-white' />
-                    }
+                        <div className="mt-8 lg:hidden inline-block">
+                            <ul className='flex items-center gap-4'>
+                                <Link href='#' className='p-2 border border-[#5C1FDF] bg-[#5C1FDF] hover:bg-transparent duration-500 rounded-full'><FaDiscord className='text-white text-lg' /></Link>
+                                <Link href='#' className='p-2 border border-[#5C1FDF] bg-[#5C1FDF] hover:bg-transparent duration-500 rounded-full'><FaTwitter className='text-white text-lg' /></Link>
+                                <Link href='/connect-wallet' className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full py-2 px-8 font-medium'>Connect Wallet</Link>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex items-center lg:gap-5 gap-5'>
+                    <div className="space-x-2 lg:inline-block hidden">
+                        <ul className='flex items-center gap-4'>
+                            <Link href='#' className='p-2 border border-[#5C1FDF] bg-[#5C1FDF] hover:bg-transparent duration-500 rounded-full'><FaDiscord className='text-white text-lg' /></Link>
+                            <Link href='#' className='p-2 border border-[#5C1FDF] bg-[#5C1FDF] hover:bg-transparent duration-500 rounded-full'><FaTwitter className='text-white text-lg' /></Link>
+                            <Link href='/connect-wallet' className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full py-2 px-8 font-medium'>Connect Wallet</Link>
+                        </ul>
+                    </div>
                 </div>
 
-                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-transparent bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
-                    {
-                        Links.map((link) => (
-                            <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                                <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
-                            </li>
-                        ))
-                    }
-                    <button>Get Started</button>
-                </ul>
             </div>
-            {/* </div> */}
-        </div>
+        </nav>
     )
 }
