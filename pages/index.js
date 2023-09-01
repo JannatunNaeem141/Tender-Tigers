@@ -1,5 +1,8 @@
 import Banner from "@/components/Banner";
+import Brands from "@/components/Brands";
+import Features from "@/components/Features";
 import Footer from "@/components/Footer";
+import NftCreator from "@/components/NftCreator";
 import Head from "next/head";
 
 export default function Home() {
@@ -17,6 +20,9 @@ export default function Home() {
       </Head>
 
       <Banner />
+      <Brands />
+      <Features />
+      <NftCreator />
     </main>
   )
 }

@@ -8,7 +8,7 @@ export default function Banner() {
             <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 lg:px-8'>
                 <div className='grid md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-0 gap-10 md:py-24 py-28 lg:min-h-screen md:min-h-[60vh] min-h-screen'>
                     <div className='flex flex-col justify-center lg:gap-14 md:gap-10 gap-8'>
-                        <h1 className='common-header-gradient lg:text-5xl md:text-4xl text-3xl font-bold lg:w-4/5 w-full'>Mint, sell, and trade NFTs at scale.</h1>
+                        <h1 className='common-header-gradient1 lg:text-5xl md:text-4xl text-3xl font-bold lg:w-4/5 w-full'>Mint, sell, and trade NFTs at scale.</h1>
                         <p className='text-base text-[#939FD3] lg:w-4/5 w-full'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde inventore similique officia voluptas, facilis temporibus</p>
                         <div className='flex items-center gap-5'>
                             <button className='uppercase lg:text-lg md:text-base text-xs font-medium text-white bg-[#5721CB] hover:bg-transparent duration-500 border border-[#5721CB] rounded-full lg:py-2.5 py-2 lg:px-10 md:px-8 px-5'>Explore</button>

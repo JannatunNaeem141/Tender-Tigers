@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import React, { useState } from 'react';
-import FeatureBrand from '../../public/Features/feature-brand-logo.png';
+import FeatureBrand from '../public/Features/feature-brand-logo.png';
 import { HiOutlineHeart, HiHeart } from 'react-icons/hi';
 import { FaEthereum } from 'react-icons/fa';
 
@@ -9,8 +9,8 @@ const Features = () => {
     const [love, setLove] = useState(false);
     // console.log(love);
     return (
-        <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 py-12'>
-            <h1 className='text-center common-header-gradient lg:text-4xl md:text-3xl text-2xl font-bold mb-12'>Trending Auctions</h1>
+        <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 py-14'>
+            <h1 className='text-center common-header-gradient2 lg:text-4xl md:text-3xl text-3xl font-bold mb-12'>Trending Auctions</h1>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5'>
                 <div className='common-card-css hover:border-[#5B1FDC] transition-all p-3'>
                     <div className='card1-bg-image bg-cover bg-no-repeat bg-center h-44 rounded-2xl'></div>
@@ -236,6 +236,9 @@ const Features = () => {
                         <button className='border border-[#1BF1B1] hover:border-[#5721CB] hover:bg-[#5721CB] transition-all rounded-full py-2 px-5 text-white text-sm'>Place a Bid</button>
                     </div>
                 </div>
+            </div>
+            <div className='flex justify-center mt-12'>
+                <button className='uppercase md:text-base text-xs font-medium text-white bg-[#5721CB] hover:bg-transparent duration-500 border border-[#5721CB] rounded-full lg:py-2.5 py-2 lg:px-10 md:px-8 px-5'>Explore</button>
             </div>
         </div>
     );

@@ -2,30 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-.common-header-gradient {
+.common-header-gradient1 {
     background: linear-gradient(24deg, #37DBA0 10%, #50DFFF 46.48%, #2A69C7 88%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.banner-bg-img {
-    background-image: url(../public/Home/banner-bg.png);
-    /* mix-blend-mode: color-dodge; */
+.common-header-gradient2 {
+    background: linear-gradient(24deg, #37DBA0 10%, #50DFFF 46.48%, #2A69C7 58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* .common-card-css {
+/* Banner */
+.banner-bg-img {
+    background-image: url(../public/Home/banner-bg.png);
+}
+
+/* Brands */
+.brandsBgCSS {
+    border-radius: 40px;
+    background: linear-gradient(331deg, rgba(69, 10, 77, 0.15) 1.67%, #5B1FDB 393.35%);
+    backdrop-filter: blur(10px);
+}
+
+/* Features */
+.common-card-css {
     border-radius: 20px;
     border: 1.5px solid rgba(87, 33, 203, 0.30);
     background: linear-gradient(137deg, rgba(155, 121, 255, 0.15) 0%, rgba(21, 14, 59, 0.15) 100%);
     backdrop-filter: blur(12.5px);
-} */
+}
 
 .card1-bg-image {
-    background-image: url(../public/Monkey.png);
+    background-image: url(../public/Features/monkey-1.png);
+}
+
+.card2-bg-image {
+    background-image: url(../public/Features/monkey-2.png);
+}
+
+.card3-bg-image {
+    background-image: url(../public/Features/monkey-3.png);
+}
+
+.card4-bg-image {
+    background-image: url(../public/Features/monkey-4.png);
+}
+
+.card5-bg-image {
+    background-image: url(../public/Features/monkey-5.png);
+}
+
+.card6-bg-image {
+    background-image: url(../public/Features/monkey-6.png);
+}
+
+.card7-bg-image {
+    background-image: url(../public/Features/monkey-7.png);
 }
 
 .card-inner-bg-css {
     background: rgba(37, 20, 68, 0.67);
     backdrop-filter: blur(2px);
+}
+
+/* NFT Creator Css */
+.nftCreatorCSS {
+    border-radius: 40px;
+    border: 1.5px solid #ffffff2a;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.08) -3.07%, rgba(255, 255, 255, 0.08) 49.04%, rgba(255, 255, 255, 0.00) 97.84%);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
 }
