@@ -6,7 +6,7 @@ import CreatorCardIcon3 from '../public/icons/icon-3.png';
 
 export default function NftCreator() {
     return (
-        <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 lg:px-8 nftCreatorCSS mt-12 mb-16'>
+        <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 lg:px-8 nftCreatorCSS mt-12 mb-20'>
             <div className='lg:py-14 md:py-10 py-8 px-5'>
                 <h1 className='lg:text-4xl md:text-3xl text-3xl text-white text-center font-semibold'>How to Become <span className='text-[#1BF1B1]'>NFT Creator</span></h1>
                 <div className='grid md:grid-cols-3 grid-cols-1 lg:gap-12 md:gap-6 gap-12 lg:mt-24 md:mt-14 mt-16 mb-5'>

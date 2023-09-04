@@ -64,6 +64,13 @@
     background-image: url(../public/Features/monkey-7.png);
 }
 
+.FeaturesBgImages {
+    background-image: url(../public/blue-effect.png), url(../public/violet-effect.png);
+    background-position: 165%, -35%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 /* NFT Creator Css */
 .nftCreatorCSS {
@@ -71,33 +78,4 @@
     border: 1.5px solid #ffffff2a;
     background: linear-gradient(105deg, rgba(255, 255, 255, 0.08) -3.07%, rgba(255, 255, 255, 0.08) 49.04%, rgba(255, 255, 255, 0.00) 97.84%);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
-}
-
-/* Connect Wallet page css */
-.left-card-img {
-    background-image: url(../public/Monkey.png);
-}
-
-.card-inner-bg-css {
-    background: rgba(37, 20, 68, 0.67);
-    backdrop-filter: blur(2px);
-}
-
-.card-inner-bg-css2 {
-    background: rgba(108, 60, 228, 0.324);
-}
-
-.right-card-top-bg {
-    background: rgba(107, 60, 228, 0.10);
-}
-
-.warningTextBg {
-    background: rgba(255, 69, 80, 0.05);
-}
-
-.FeaturesBgImages {
-    background-image: url(../public/smoke-blue.png), url(../public/smoke-violet.png);
-    background-position: 165%, -35%;
-    background-repeat: no-repeat;
-    background-size: contain;
 }

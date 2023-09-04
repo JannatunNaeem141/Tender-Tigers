@@ -4,6 +4,8 @@ import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import NftCreator from "@/components/NftCreator";
 import Head from "next/head";
+import BlueEffect from '../public/blue-effect.png';
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,7 +24,11 @@ export default function Home() {
       <Banner />
       <Brands />
       <Features />
-      <NftCreator />
+      <div className="relative overflow-hidden">
+        <NftCreator />
+        <Image src={BlueEffect} alt='' className='absolute lg:bottom-[7rem] md:bottom-[26rem] bottom-[53rem] lg:-right-72 md:-right-80 -right-32' width={1100} />
+        <Footer />
+      </div>
     </main>
   )
 }

@@ -6,7 +6,6 @@ import Logo from '../public/Logos/logo.png';
 import Image from 'next/image';
 import { FaDiscord, FaTwitter } from 'react-icons/fa';
 
-
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     return (
@@ -16,10 +15,7 @@ export default function Navbar() {
                     <Link href='/'><Image src={Logo} width={100} height={100} alt='Logo' /></Link>
                     <div className="lg:hidden flex items-center gap-3">
                         {/* Hamburger toggle button */}
-                        <button
-                            className="p-2 text-gray-700 rounded-md outline-none"
-                            onClick={() => setOpen(!open)}
-                        >
+                        <button className="p-2 text-gray-700 rounded-md outline-none" onClick={() => setOpen(!open)} >
                             {open ? (
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +49,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div>
-                    <div className={`lg:flex lg:items-center lg:justify-between lg:pb-0 pb-12 absolute lg:static lg:bg-transparent bg-[#0E102B] lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
+                    <div className={`lg:flex lg:items-center lg:justify-between lg:pb-0 pb-12 absolute lg:static lg:bg-transparent bg-[#0E102B] lg:z-auto -z-10 left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
                         <nav className="lg:flex grid grid-cols-1 items-center justify-center lg:gap-5 gap-5 lg:pt-0 pt-8">
                             <Link href='/' className='text-white hover:text-[#1BF1B1] duration-500 font-medium'>Home</Link>
                             <Link href='#' className='text-white hover:text-[#1BF1B1] duration-500 font-medium'>Marketplace</Link>
@@ -66,7 +62,7 @@ export default function Navbar() {
                             <ul className='flex items-center gap-4'>
                                 <Link href='#' className='p-2 border border-[#5C1FDF] bg-[#5C1FDF] hover:bg-transparent duration-500 rounded-full'><FaDiscord className='text-white text-lg' /></Link>
                                 <Link href='#' className='p-2 border border-[#5C1FDF] bg-[#5C1FDF] hover:bg-transparent duration-500 rounded-full'><FaTwitter className='text-white text-lg' /></Link>
-                                <Link href='/connect-wallet' className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full py-2 px-8 font-medium'>Connect Wallet</Link>
+                                <Link href='#' className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full py-2 px-8 font-medium'>Connect Wallet</Link>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +72,7 @@ export default function Navbar() {
                         <ul className='flex items-center gap-4'>
                             <Link href='#' className='p-2 border border-[#5C1FDF] bg-[#5C1FDF] hover:bg-transparent duration-500 rounded-full'><FaDiscord className='text-white text-lg' /></Link>
                             <Link href='#' className='p-2 border border-[#5C1FDF] bg-[#5C1FDF] hover:bg-transparent duration-500 rounded-full'><FaTwitter className='text-white text-lg' /></Link>
-                            <Link href='/connect-wallet' className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full py-2 px-8 font-medium'>Connect Wallet</Link>
+                            <Link href='#' className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full py-2 px-8 font-medium'>Connect Wallet</Link>
                         </ul>
                     </div>
                 </div>
