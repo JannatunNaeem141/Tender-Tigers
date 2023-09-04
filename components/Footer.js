@@ -8,8 +8,8 @@ import BlueEffect from '../public/blue-effect.png';
 export default function Footer() {
     return (
         <div className='relative overflow-hidden'>
-            <Image src={BlueEffect} alt='' className='absolute lg:-bottom-[19rem] md:-bottom-[21rem] -bottom-[9rem] lg:-left-72 md:-left-64 -left-28' width={900} />
-            <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 lg:px-8 py-12'>
+            <Image src={BlueEffect} alt='' className='absolute lg:-bottom-[19rem] md:-bottom-[21rem] -bottom-[9rem] lg:-left-72 md:-left-64 -left-28 -z-10' width={900} />
+            <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 lg:px-8 py-12 z-10'>
                 <div className='w-full lg:flex grid grid-cols-1 lg:gap-24 md:gap-8 gap-10'>
                     <div className='lg:w-[45%] w-full'>
                         <div className='flex flex-col gap-8'>
