@@ -13,11 +13,12 @@ export default function Brands() {
     var settings = {
         dots: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        initialSlide: 0,
         autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
         responsive: [
             {
                 breakpoint: 1024,
@@ -48,9 +49,9 @@ export default function Brands() {
     return (
         <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 lg:px-8 md:px-8 px-5 brandsBgCSS md:py-16 py-10 -mt-14 text-white'>
             <Slider {...settings} >
-                <div>
+                <span className='!focus-visible:border-none !focus-visible:border-transparent'>
                     <Image src={BrandLogo1} className='md:h-[43px] h-[35px] mx-auto' alt='Brand Logo' />
-                </div>
+                </span>
                 <div>
                     <Image src={BrandLogo2} className='md:h-[43px] h-[35px] mx-auto' alt='Brand Logo' />
                 </div>

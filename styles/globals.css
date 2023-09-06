@@ -28,7 +28,6 @@
     backdrop-filter: blur(10px);
 }
 
-
 .slick-next {
     display: none !important;
 }
@@ -48,6 +47,10 @@
 .card1-bg-image {
     background-image: url(../public/Features/monkey-1.png);
 }
+
+/* .common-card-css:hover .card1-bg-image {
+    scale: 1;
+} */
 
 .card2-bg-image {
     background-image: url(../public/Features/monkey-2.png);
@@ -87,4 +90,96 @@
     border: 1.5px solid #ffffff2a;
     background: linear-gradient(105deg, rgba(255, 255, 255, 0.08) -3.07%, rgba(255, 255, 255, 0.08) 49.04%, rgba(255, 255, 255, 0.00) 97.84%);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+@media (max-width: 672px) {
+
+    /* Banner */
+    .bannerButtons {
+        flex-direction: column;
+    }
+
+    .bannerButtons button {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Brands */
+    .brandsBgCSS {
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1130px) {
+    .featureCardBottom {
+        flex-direction: column;
+        gap: 15px;
+        align-items: start;
+    }
+
+    .featureCardBottom button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .maxWidthCSS {
+        padding: 0 100px;
+    }
+}
+
+
+@media (max-width: 895px) {
+    .maxWidthCSS {
+        padding: 0 50px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .maxWidthCSS {
+        padding: 0 180px;
+    }
+
+    .widthStyle {
+        margin: 80px 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .maxWidthCSS {
+        padding: 0 150px;
+    }
+}
+
+@media (max-width: 679px) {
+    .maxWidthCSS {
+        padding: 0 100px;
+    }
+
+    .widthStyle {
+        margin: 80px 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    .maxWidthCSS {
+        padding: 0 80px;
+    }
+
+    .widthStyle {
+        margin: 80px 50px;
+    }
+}
+
+@media (max-width: 475px) {
+    .maxWidthCSS {
+        padding: 0;
+    }
+
+    .widthStyle {
+        margin: 80px 25px;
+    }
 }

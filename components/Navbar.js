@@ -94,26 +94,9 @@ import WIcon from '../public/icons/w-icon.png';
 
 const HeaderView = () => {
     const [opened, { toggle }] = useDisclosure(false);
-    const pinned = useHeadroom({ fixedAt: 120 });
-    const [scroll] = useWindowScroll();
-    const HEADER_HEIGHT = scroll.y >= 765 ? 85 : 110;
-
-    // const items = links.map((link) => (
-    //     <a
-    //         key={link.label}
-    //         href={link.link}
-    //         target="_blank"
-    //         rel="noreferrer"
-    //         className={`block relative text-base md:text-sm 2xl:text-base font-semibold px-6 py-3 transition-all duration-300 uppercase text-white nav-item`}
-    //     >
-    //         <span>{link.label}</span>
-    //     </a>
-    // ));
 
     return (
-        <Header height={HEADER_HEIGHT} px="md"
-            className={`z-50 py-3 px-0 absolute -translate-y-0 border-none ${opened ? 'bg-[#0E102B]' : 'bg-transparent'}`}
-        >
+        <Header height={110} px="md" className={`z-50 py-3 px-0 absolute w-full top-0 -translate-y-0 border-none ${opened ? 'bg-[#0E102B]' : 'bg-transparent'}`} >
             <Container className="flex justify-between items-center h-full lg:px-12" size="xl">
                 <Box>
                     <Link href="/" className="flex justify-start items-center">
@@ -129,7 +112,7 @@ const HeaderView = () => {
                     <Link href="#" target="_blank" rel="noreferrer" className='font-semibold transition-all duration-300 text-white hover:text-[#1BF1B1]'>Create</Link>
                 </Group>
 
-                <Link href='#' className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full lg:py-3 md:py-2 lg:px-10 px-5 font-medium hidden md:flex items-center gap-2'><Image src={WIcon} alt='W-Icon' />Connect Wallet</Link>
+                <Link href='#' className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full lg:py-3 md:py-2 lg:px-8 px-5 font-medium hidden md:flex items-center gap-1'><Image src={WIcon} alt='W-Icon' />Connect Wallet</Link>
 
                 <Burger
                     opened={opened}
@@ -143,7 +126,7 @@ const HeaderView = () => {
                     {(styles) => (
                         <Box
                             className="absolute bg-[#0E102B] left-0 w-full z-10 overflow-hidden md:hidden rounded-none pb-5 overflow-y-auto"
-                            top={HEADER_HEIGHT}
+                            top={110}
                             style={styles}
                         >
                             <Link href="/" target="_blank" rel="noreferrer" className={`block relative text-base md:text-sm 2xl:text-base font-semibold px-6 py-3 transition-all duration-300 text-white nav-item`} >
@@ -163,7 +146,7 @@ const HeaderView = () => {
                             </Link>
 
                             <Link href="" rel="noreferrer" target="_blank" className="mx-5">
-                                <Button variant="white" fullWidth className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full py-2 px-8 font-medium flex items-center justify-center'><Image src={WIcon} alt='W-Icon' className="mr-2" />Connect Wallet</Button>
+                                <Button variant="white" fullWidth className='text-white bg-[#5C1FDF] hover:bg-transparent duration-500 border border-[#5C1FDF] rounded-full py-2 px-8 font-medium flex items-center justify-center'><Image src={WIcon} alt='W-Icon' className="mr-1" />Connect Wallet</Button>
                             </Link>
                         </Box>
                     )}

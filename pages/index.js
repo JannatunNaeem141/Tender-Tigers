@@ -26,7 +26,7 @@ export default function Home() {
       <Features />
       <div className="relative overflow-hidden">
         <NftCreator />
-        <Image src={BlueEffect} alt='' className='absolute lg:bottom-[7rem] md:bottom-[26rem] bottom-[53rem] lg:-right-72 md:-right-80 -right-32' width={1100} />
+        <Image src={BlueEffect} alt='' className='absolute lg:bottom-[7rem] md:bottom-[26rem] bottom-[53rem] lg:-right-72 md:-right-80 -right-32 z-10' width={1100} />
         <Footer />
       </div>
     </main>

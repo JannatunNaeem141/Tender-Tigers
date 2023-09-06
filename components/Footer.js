@@ -7,7 +7,7 @@ import BlueEffect from '../public/blue-effect.png';
 
 export default function Footer() {
     return (
-        <div className='relative overflow-hidden'>
+        <div className='relative overflow-hidden z-20'>
             <Image src={BlueEffect} alt='' className='absolute lg:-bottom-[19rem] md:-bottom-[21rem] -bottom-[9rem] lg:-left-72 md:-left-64 -left-28 -z-10' width={900} />
             <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 lg:px-8 py-12 z-10'>
                 <div className='w-full lg:flex grid grid-cols-1 lg:gap-24 md:gap-8 gap-10'>
@@ -54,7 +54,7 @@ export default function Footer() {
                                 <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Big Bounty</Link></li>
                                 <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Become Partners</Link></li>
                             </ul>
-                            <ul className='flex flex-col md:gap-6 gap-3'>
+                            <ul className='flex flex-col gap-3'>
                                 <h3 className='text-white font-semibold text-xl md:mb-8 mb-4'>Others</h3>
                                 <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>Tokens</Link></li>
                                 <li><Link href='#' className='text-[#E0E0E0] hover:text-[#1BF1B1] transition-all text-base'>API</Link></li>
