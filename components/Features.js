@@ -10,8 +10,8 @@ const Features = () => {
     // console.log(love);
     return (
         <div className='FeaturesBgImages'>
-            <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 py-14'>
-                <h1 className='text-center common-header-gradient2 lg:text-4xl md:text-3xl text-3xl font-bold mb-12'>Trending Auctions</h1>
+            <div className='max-w-7xl lg:mx-auto md:mx-8 mx-5 md:py-20 py-14'>
+                <h1 className='text-center common-header-gradient2 lg:text-4xl md:text-3xl text-3xl font-bold mb-12 uppercase'>Trending Auctions</h1>
 
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5'>
                     <div className='common-card-css hover:border-[#5B1FDC] transition-all duration-500 p-3'>
@@ -240,7 +240,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className='flex justify-center mt-12'>
-                    <button className='uppercase md:text-base text-xs font-medium text-white bg-[#5721CB] hover:bg-transparent duration-500 border border-[#5721CB] rounded-full lg:py-2.5 py-2 lg:px-10 md:px-8 px-5'>Explore</button>
+                    <button className='uppercase text-base font-medium text-white bg-[#5721CB] hover:bg-transparent duration-500 border border-[#5721CB] rounded-full py-2.5 lg:px-10 px-8'>Explore</button>
                 </div>
             </div>
         </div>

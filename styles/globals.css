@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .common-header-gradient1 {
-    background: linear-gradient(24deg, #37DBA0 10%, #50DFFF 46.48%, #2A69C7 88%);
+    background: linear-gradient(24deg, #37DBA0 4%, #50DFFF 46.48%, #2A69C7 88%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -23,9 +23,18 @@
 
 /* Brands */
 .brandsBgCSS {
-    border-radius: 40px;
+    border-radius: 30px;
     background: linear-gradient(331deg, rgba(69, 10, 77, 0.15) 1.67%, #5B1FDB 393.35%);
     backdrop-filter: blur(10px);
+}
+
+
+.slick-next {
+    display: none !important;
+}
+
+.slick-prev {
+    display: none !important;
 }
 
 /* Features */
