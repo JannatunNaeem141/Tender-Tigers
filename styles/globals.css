@@ -141,6 +141,7 @@
 @media (max-width: 767px) {
     .maxWidthCSS {
         padding: 0 180px;
+        margin: 60px 0;
     }
 
     .widthStyle {
